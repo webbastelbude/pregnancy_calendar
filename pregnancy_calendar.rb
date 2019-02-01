@@ -36,9 +36,10 @@ get '/:date.ics' do
     cal.add_event(event)
   end
   
-  cal.add_event(get_event(start_date,  1,  6, "Wechsel der Lohnsteuerklasse prüfen"))    
-  cal.add_event(get_event(start_date,  7, 10, "Krankenkassenleistungen prüfen / wechseln"))
-  cal.add_event(get_event(start_date, 10, 16, "Hebammensuche"))
+
+#  cal.add_event(get_event(start_date,  1,  6, "Wechsel der Lohnsteuerklasse prüfen"))    
+#  cal.add_event(get_event(start_date,  7, 10, "Krankenkassenleistungen prüfen / wechseln"))
+#  cal.add_event(get_event(start_date, 10, 16, "Hebammensuche"))
   cal.add_event(get_event(start_date, 13, 14, "Arbeitgeber über Schwangerschaft informieren"))
   cal.add_event(get_event(start_date, 13, 20, "Nabelschnurblut Einlagerung klären"))
   cal.add_event(get_event(start_date, 16, 22, "Anmeldung für Geburtsvorbereitungskurs"))
@@ -50,7 +51,7 @@ get '/:date.ics' do
   cal.add_event(get_event(start_date, 25, 40, "Kinderarztsuche"))
   cal.add_event(get_event(start_date, 26, 40, "Kita oder Tagesbetreuung suchen"))
   cal.add_event(get_event(start_date, 26, 32, "Baby Erstaustattung kaufen / leihen"))
-  cal.add_event(get_event(start_date, 30, 40, "Ggf. Haushaltshilfe suchen"))
+#  cal.add_event(get_event(start_date, 30, 40, "Ggf. Haushaltshilfe suchen"))
   cal.add_event(get_event(start_date, 31, 33, "Antrag auf Elternzeit"))
   cal.add_event(get_event(start_date, 31, 37, "Taufe vorbereiten, sofern geplant"))
   cal.add_event(get_event(start_date, 35, 36, "Kliniktasche packen"))
@@ -58,18 +59,19 @@ get '/:date.ics' do
   cal.add_event(get_event(start_date, 35, 40, "Antrag auf Elterngeld vorbereiten"))
   cal.add_event(get_event(start_date, 35, 40, "Mutterschutz"))
 
-  cal.add_event(get_event(start_date,  5,  6, "Schwangerschaftstest nun aussagekräftig"))
-  cal.add_event(get_event(start_date,  5,  7, "Erstuntersuchung beim Frauenarzt"))
-  cal.add_event(get_event(start_date,  9, 12, "1. Ultraschalluntersuchung"))
-  cal.add_event(get_event(start_date, 10, 13, "Impfschutz prüfen lassen"))
-  cal.add_event(get_event(start_date, 12, 14, "Ersttrimesterscreening"))
-  cal.add_event(get_event(start_date, 15, 18, "Ggf. Fruchtwasseruntersuchung"))
-  cal.add_event(get_event(start_date, 19, 22, "2. Ultraschalluntersuchung"))
-  cal.add_event(get_event(start_date, 24, 28, "Screening auf Schwangerschaftsdiabetes"))
-  cal.add_event(get_event(start_date, 29, 33, "3. Ultraschalluntersuchung"))
+#  cal.add_event(get_event(start_date,  5,  6, "Schwangerschaftstest nun aussagekräftig"))
+#  cal.add_event(get_event(start_date,  5,  7, "Erstuntersuchung beim Frauenarzt"))
+#  cal.add_event(get_event(start_date,  9, 12, "1. Ultraschalluntersuchung"))
+#  cal.add_event(get_event(start_date, 10, 13, "Impfschutz prüfen lassen"))
+#  cal.add_event(get_event(start_date, 12, 14, "Ersttrimesterscreening"))
+#  cal.add_event(get_event(start_date, 15, 18, "Ggf. Fruchtwasseruntersuchung"))
+#  cal.add_event(get_event(start_date, 19, 22, "2. Ultraschalluntersuchung"))
+#  cal.add_event(get_event(start_date, 24, 28, "Screening auf Schwangerschaftsdiabetes"))
+#  cal.add_event(get_event(start_date, 29, 33, "3. Ultraschalluntersuchung"))
   cal.add_event(get_event(start_date, 30, 36, "Geburtsvorbereitungskurs"))
-  cal.add_event(get_event(start_date, 32, 33, "Blutuntersuchungen (Hepatitis B)"))
-  cal.add_event(get_event(start_date, 36, 36, "Abstrich auf B-Streptokokken"))
+#  cal.add_event(get_event(start_date, 32, 33, "Blutuntersuchungen (Hepatitis B)"))
+#  cal.add_event(get_event(start_date, 36, 36, "Abstrich auf B-Streptokokken"))
+
   
   content_type "text/calendar"
   cal.to_ical
