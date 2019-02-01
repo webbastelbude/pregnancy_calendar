@@ -84,7 +84,7 @@ end
 def get_event( start_date, start_ssw, end_ssw, event_summary)
   event = Icalendar::Event.new
   date_start = (start_date + (start_ssw - 1).weeks)
-  date_end = (date_start + (end_ssw - start_ssw).weeks)
+  date_end = (date_start + (end_ssw - start_ssw + 1).weeks)
   event.dtstart = Icalendar::Values::DateOrDateTime.new(date_start.strftime("%Y%m%d")).call
   event.dtend = Icalendar::Values::DateOrDateTime.new(date_end.strftime("%Y%m%d")).call
   event.summary = event_summary
