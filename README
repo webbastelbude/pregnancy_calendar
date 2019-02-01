@@ -7,3 +7,6 @@ Request you personal calendar with the due date of your pregnancy in the followi
 http://<your-ip>:1234/<year>-<month>-<day>.ics
 
 You can import this URL into your iPhone calendar as usual.
+
+I'm not a doctor and these informations might be wrong ! I just converted the informations from
+https://www.elterngeld.de/ based on their pregnancy calendar into a iPhone importable format for my own convinience. Please double check with you doctor.
