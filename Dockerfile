@@ -16,6 +16,6 @@ RUN bundle install
 COPY . $APP_HOME
 
 # Start server
-ENV PORT 3000
-EXPOSE 3000
-CMD ["ruby", "kalender.rb"]
+ENV PORT 1234
+EXPOSE 1234
+CMD ["ruby", "pregnancy_calendar.rb"]
